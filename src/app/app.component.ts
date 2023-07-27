@@ -1,19 +1,17 @@
-import { Component } from '@angular/core';
-import { ChildrenOutletContexts } from '@angular/router';
-import { slideInAnimation } from './animations/animations';
+import { Component } from "@angular/core";
+import { ChildrenOutletContexts } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  animations: [slideInAnimation]
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = '@morenoisidro';
 
-  constructor(private contexts: ChildrenOutletContexts) {}
+  constructor() {}
 
-  getRouteAnimationData() {
-    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
-  }
+  // @todo: replace with vertical scrolling animation
+  // getRouteAnimationData() {
+  //   return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
+  // }
 }

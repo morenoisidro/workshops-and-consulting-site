@@ -7,8 +7,7 @@ import { Route } from './routes';
 const routes: Routes = [
   {
     path: '',
-    component: LandingComponent,
-    data: { animation: 'HomePage' }
+    component: LandingComponent
   },
   { 
     path: Route.ABOUT_ME,

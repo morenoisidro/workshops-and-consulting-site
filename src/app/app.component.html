@@ -1,3 +1,24 @@
-<div [@routeAnimations]="getRouteAnimationData()">
-    <router-outlet></router-outlet>
-</div>
+<!-- @todo: migrate to vertical animation if needed -->
+<!-- <div [@routeAnimations]="getRouteAnimationData()"> -->
+<!-- <router-outlet></router-outlet>
+</div> -->
+
+<main class="main__container">
+    <header>
+        <div class="menu-container">
+            <app-menu-component></app-menu-component>
+        </div>
+    </header>
+    <section class="landing__container">
+
+        <!-- @todo: talk to Agus abut this -->
+        <!-- <div class="how-i-made"> -->
+        <!-- TODO: Github repo link with icon -->
+        <!-- <a class="how-i-made--link" href="http://">(i)&nbsp; How I made this site?</a> -->
+        <!-- </div> -->
+        <div>
+            <!-- Site content here -->
+            <router-outlet></router-outlet>
+        </div>
+    </section>
+</main>
