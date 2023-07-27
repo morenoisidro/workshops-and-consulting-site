@@ -1,0 +1,37 @@
+<div style="height: 100vh; width: 100%; background-color: black; color:white">
+    <h1 style="margin-top: 0;">Contact</h1>
+    <a [routerLink]="['']">Go Back</a> <!--  TODO: Can be back to Home or back in history -->
+    <ng-container *ngIf="!submitSucces; else elseTemplate">
+        <form [formGroup]="contactForm" id="contactForm" (ngSubmit)="onSubmit()">
+            <input type="hidden" formControlName="access_key" name="access_key" />
+            <input type="hidden" formControlName="subject" name="subject" />
+            <div>
+                <label for="name">Full Name</label><br>
+                <input type="text" formControlName="name" name="name" id="name" placeholder="John Doe" required />
+                <br><br>
+            </div>
+            <div>
+                <label for="email">Email Address</label><br>
+                <input type="email" formControlName="email" name="email" id="email" placeholder="you@company.com"
+                    required /><br><br>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <br>
+                <input type="text" formControlName="phone" name="phone" id="phone" placeholder="+1 (555) 1234-567"
+                    required /><br><br>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <br>
+                <textarea rows="5" formControlName="message" name="message" id="message" placeholder="Your Message"
+                    required></textarea><br><br>
+            </div>
+
+            <button type="submit"> Send Message </button>
+        </form>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <h1>Submit Succesfull!!</h1>
+    </ng-template>
+</div>

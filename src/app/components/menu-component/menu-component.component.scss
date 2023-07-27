@@ -1,0 +1,45 @@
+@import "variables";
+
+.menu {
+    &-buttons {
+        &__container {
+            height: 92vh;
+            display: flex;
+            flex-direction: column;
+            padding: 80px 65px 0 0;
+            font-size: 30px;
+            font-family: monospace;
+            cursor: pointer;
+            text-align: right;
+        }
+    }
+
+    &-link {
+        color: $color__landing-text--light;
+        margin-bottom: 30px;
+        font-size: 22px;
+        font-family: monospace;
+        cursor: pointer;
+        text-decoration: none;
+
+        // underline effect
+        // More info at: https://codepen.io/jltk/pen/dMvGvG
+        display: inline-block;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            bottom: 0;
+            height: 2px;
+            margin: -5px 0;
+            right: 0;
+            background-color: white;
+            transition: all 0.4s ease-in 0s;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
