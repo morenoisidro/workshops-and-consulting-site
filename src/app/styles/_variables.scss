@@ -11,7 +11,10 @@ $color__header-background--dark: #000000c7; // DEBUG value
 // $color__landing-text--dark: #9e9e9e;
 $color__landing-text--light: #ffffff;
 
-$header-height: 60;
-$header-height-px: 60 * 1px;
+$header-height: 100;
+$header-height-px: 100 * 1px;
 
-$font-family--monospace: monospace;
+$font-family: 'Spline Sans Mono';
+
+// Margins
+$main__horizontal-padding: 80px

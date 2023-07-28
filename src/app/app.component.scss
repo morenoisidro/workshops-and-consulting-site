@@ -6,11 +6,16 @@
   }
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: $header-height-px;
+  align-items: center;
+  padding: 0 $main__horizontal-padding;
+}
+
 .landing {
   &__container {
-    .menu-container {
-      position: fixed;
-      right: 0;
-    }
+    padding: 0 $main__horizontal-padding;
   }
 }

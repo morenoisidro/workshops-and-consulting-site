@@ -9,8 +9,9 @@
     }
 
     &-link {
+        font-size: 16px;
         color: $color__landing-text--light;
-        margin-bottom: 30px;
+        margin: 0 20px;
         cursor: pointer;
         text-decoration: none;
 
@@ -18,6 +19,11 @@
         // More info at: https://codepen.io/jltk/pen/dMvGvG
         display: inline-block;
         position: relative;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
         &:after {
             content: "";
             display: block;
