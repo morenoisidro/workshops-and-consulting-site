@@ -1,0 +1,19 @@
+@import "variables";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+}
+
+.image-sun {
+  grid-column-start: 3;
+    background-image: url("../../../assets/images/svg/sun.svg");
+    background-repeat: no-repeat;
+    background-size: auto calc(100vh - 100px);
+  }
+
+.text-main {
+  padding: 224px 0;
+  grid-column-start: span 2;
+}

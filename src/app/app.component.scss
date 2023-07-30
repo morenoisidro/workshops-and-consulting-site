@@ -2,20 +2,26 @@
 
 .main {
   &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto;
     background-color: $color__landing-background--dark;
   }
 }
 
 .header {
+  grid-column-end: span 12;
   display: flex;
   justify-content: space-between;
   height: $header-height-px;
   align-items: center;
   padding: 0 $main__horizontal-padding;
+  border-bottom: 4px solid $text-white;
 }
 
 .landing {
   &__container {
+    grid-column-end: span 12;
     padding: 0 $main__horizontal-padding;
   }
 }
