@@ -7,14 +7,14 @@ $rootSize: 16;
 $landing-image__height: torem(600);
 $color__landing-background--dark: #10162D;
 $color__header-background--dark: #000000c7; // DEBUG value
-
 // $color__landing-text--dark: #9e9e9e;
-$color__landing-text--light: #ffffff;
+$text-white: #ffffff;
+
 
 $header-height: 100;
 $header-height-px: 100 * 1px;
 
-$font-family: 'Spline Sans Mono';
+$font-family: 'SplineSansMono';
 
 // Margins
 $main__horizontal-padding: 80px
